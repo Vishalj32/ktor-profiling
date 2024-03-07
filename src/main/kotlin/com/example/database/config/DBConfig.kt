@@ -9,8 +9,8 @@ class Config(
 ) {
 
     companion object {
-        const val DATABASENAME: String = "catalog"
-        const val DATABASEUSER: String = "root"
-        const val DATABASEPASSWORD: String = "admin"
+        const val DATABASENAME: String = "ktordb"
+        const val DATABASEUSER: String = "ktoruser"
+        const val DATABASEPASSWORD: String = "ktorpassword"
     }
 }

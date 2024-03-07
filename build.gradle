@@ -32,12 +32,12 @@ dependencies {
     implementation "org.jetbrains.exposed:exposed-jdbc:$exposed_version"
     implementation "com.zaxxer:HikariCP:$hikari_version"
     implementation "com.h2database:h2:$h2_version"
-    implementation "mysql:mysql-connector-java:$mysql_connection_version"
     implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.0.5'
 
     implementation "io.ktor:ktor-metrics:1.6.8"
     implementation "io.ktor:ktor-metrics-micrometer:1.6.8"
-    implementation "io.micrometer:micrometer-registry-prometheus:1.3.1"
+    implementation "io.ktor:ktor-server-metrics-micrometer:$ktor_version"
+    implementation "io.micrometer:micrometer-registry-prometheus:1.10.3"
 
     implementation "io.insert-koin:koin-ktor:$koin_version"
 }
